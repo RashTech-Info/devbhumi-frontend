@@ -25,7 +25,7 @@ const Inquiry = () => {
           withCredentials: true
         });
         setInquiries(res.data);
-        toast.success('Inquiries loaded successfully');
+        // toast.success('Inquiries loaded successfully');
       } catch (err) {
         setInquiries([]);
         toast.error('Failed to fetch inquiries');
